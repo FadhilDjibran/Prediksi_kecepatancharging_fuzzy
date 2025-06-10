@@ -10,10 +10,10 @@ kecepatan_charging = ctrl.Consequent(np.arange(0, 101, 1), 'kecepatan_charging')
 
 # 2. Definisikan Fungsi Keanggotaan (Membership Functions)
 # Untuk Suhu
-suhu['sangat_dingin'] = fuzz.trapmf(suhu.universe, [5, 5, 10, 13])
-suhu['dingin'] = fuzz.trapmf(suhu.universe, [10, 13, 17, 20])
-suhu['normal'] = fuzz.trapmf(suhu.universe, [18, 22, 37, 41])
-suhu['panas'] = fuzz.trapmf(suhu.universe, [39, 41, 44, 47])
+suhu['sangat_dingin'] = fuzz.trapmf(suhu.universe, [5, 5, 8, 12])
+suhu['dingin'] = fuzz.trapmf(suhu.universe, [8, 12, 16, 21])
+suhu['normal'] = fuzz.trapmf(suhu.universe, [17, 24, 36, 43])
+suhu['panas'] = fuzz.trapmf(suhu.universe, [39, 42, 46, 48])
 suhu['sangat_panas'] = fuzz.trapmf(suhu.universe, [45, 47, 50, 50])
 
 # Untuk Kecepatan Charging

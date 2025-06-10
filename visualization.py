@@ -61,7 +61,7 @@ def tampilkan_grafik_pengelompokan():
     legend_elements = [
         plt.Line2D([0], [0], color='black', linestyle='--', lw=2, label='Tren Kecepatan Prediksi'),
         Patch(facecolor='cyan', alpha=0.3, label='Zona Terlalu Dingin (<5°C)'),
-        Patch(facecolor='lightgreen', alpha=0.3, label='Zona Ideal (Fast/Hyper)'),
+        Patch(facecolor='lightgreen', alpha=0.3, label='Zona Ideal (Hyper)'),
         Patch(facecolor='lightcoral', alpha=0.3, label='Zona Terlalu Panas (>50°C)')
     ]
     plt.legend(handles=legend_elements, loc='best')
